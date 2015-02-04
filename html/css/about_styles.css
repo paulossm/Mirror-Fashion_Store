@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    color: #333;
+    margin: 0;
+}
+
+/*** cabeçalho ***/
+nav.options-menu {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+nav.options-menu ul {
+    font-size: 15px;
+}
+nav.options-menu li {
+    display: inline;
+    margin-left: 20px;
+}
+nav.options-menu a {
+    color: #036;
+    text-decoration: none;
+}
+
+header {
+    position: relative;   
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    width: 940px;
+    margin-top: 10px;
+}
+p {
+    text-align: justify;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    text-indent: 15px; /* espaçamento da primeira linha do parágrafo */
+    padding: 5px;
+}
+p:first-letter{
+    font-weight: bold;
+}
+h1 + p {
+    text-indent: 0;
+}
+h1 + p:first-letter {
+    font-size: 30px;
+    margin-right: 3px;
+    font-family: cursive;
+}
+p.wallet {
+    background: url(../img/sacola.png) no-repeat top right;
+    padding-right: 35px;
+    padding-top: 8px;
+    font-size: 14px;
+    text-align: right;
+    width: 140px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+h1 {
+    background-image: none; 
+    padding: 5px;
+}
+h2 {
+    border-bottom: 2px solid #333;
+    padding: 2px;
+    margin-top: 15px;
+}
+
+figure {
+    background: linear-gradient(30deg, #F1F1F1, #BBBBBB); /*#F2EDED*/
+    border: 1px dashed #CCC;
+    text-align: center;
+    padding: 15px;
+    margin: 30px;
+    
+    /* Chrome até versão 3, Safari até versão 4 */
+    -webkit-border-radius: 8px;
+    /* Firefox até 3.6 */
+    -moz-border-radius: 8px;
+    /* Todas as versões modernas dos navegadores,
+    incluindo IE e Opera que nunca precisaram de
+    prefixo pra isso */
+    border-radius: 8px;
+}
+
+figure#centro-distribuicao {
+    width: 550px;
+    margin: 10px auto;
+}
+
+figure#familia-pelho {
+    float: right;
+    margin: 0 0 10px 10px;
+}
+
+figcaption {
+    font-style: italic;   
+}
+.content ul {
+    margin: 10px 0px;
+}
+.content ul li {
+    margin-top: 10px;   
+}
+
+
+/*** ESTILOS DO RODAPÉ ***/
+footer {
+    background-image: url(../img/fundo-rodape.png);
+    clear: both;
+    padding: 20px 0;
+}
+footer .content {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+footer span {
+    color: white;
+    
+}
+.social {
+    position: absolute;
+    top: 25px;
+    right: 0;
+}
+.social li {
+    float: left;
+    margin-left: 25px;
+}
+.social li a {
+    width: 32px;
+    height: 32px;
+    text-indent: -9999px;
+    display: block;
+}
+
+.social a[href*="facebook"] {
+background-image:url(../img/facebook.png);
+}
+.social a[href*="twitter"]{background-image: url(../img/twitter.png);}
+.social a[href*="plus.google"]{background-image: url(../img/googleplus.png);}

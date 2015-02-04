@@ -1,0 +1,204 @@
+@charset "utf-8";
+body {
+    color: #333;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/*** cabeçalho ***/
+p.wallet {
+    background: url(../img/sacola.png) no-repeat top right;
+    padding-right: 35px;
+    padding-top: 8px;
+    font-size: 14px;
+    text-align: right;
+    width: 140px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+nav.options-menu {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+nav.options-menu ul {
+    font-size: 15px;
+}
+nav.options-menu li {
+    display: inline;
+    margin-left: 20px;
+}
+nav.options-menu a {
+    color: #036;
+    text-decoration: blink;
+}
+nav.options-menu a:hover {
+    color: #007dc6;
+}
+nav.options-menu a:active {
+    color: #867dc6;   
+}
+
+header {
+    position: relative;   
+}
+.container {
+    margin: 0 auto;
+    width: 940px;
+}
+.features { 
+    margin-top: 10px;
+    position: relative;
+}
+
+.search, .menu-department {
+    background-color: #DCDCDC;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 230px;
+    margin-right: 10px;
+    float: left;
+}
+.search h2, .search form, .menu-department h2 {
+    margin: 10px;   
+}
+.search input {
+    vertical-align: middle;
+}
+.search input[type=search]{
+    width: 170px;
+    border-radius: 10px;
+}
+section[class|="menu"] li {
+    background-color: white;
+    margin-bottom: 1px;
+    padding: 5px 10px;
+}
+.menu-department {
+    clear: left; 
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+.menu-department ul li ul {
+    display: none;   
+}
+.menu-department li:hover ul {
+    display: block;   
+}
+.menu-department ul li ul li {
+    background-color: #DCDCDC;
+}
+.menu-department ul li li a:before {
+    content: '\272A'; 
+    padding-right: 3px;
+}
+.menu-department a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+/*.panels {}*/
+.panel {
+    margin: 10px 0;
+    padding: 10px;
+    width: 445px;
+    
+    border-radius: 6px;
+    box-shadow: inset 0px 0px 4px #999;
+}
+.panel li {
+    display: inline-block;
+    vertical-align: top;
+    width: 140px;
+    margin: 2px;
+    padding-bottom: 10px;
+    
+        /* some adjust */
+            transition: 0.3s ease-out;
+    -webkit-transition: 0.3s ease-out;
+}
+/*** HOVER OVER ENCHANCEMENT ***/
+.panel li:hover {
+    box-shadow: 0px 0px 5px #333;
+    background-color: rgba(255,255,255,.8);
+    
+    /* transition effects */
+    -webkit-transition: all linear 0.3s;
+    transition: all linear 0.3s;
+    
+    /* transform effects */
+    -webkit-transform: scale(1.2) rotate(3deg);
+    transform: scale(1.2) rotate(3deg);
+}
+.panel li:nth-child(2n):hover {
+    -webkit-transform: scale(1.2) rotate(-3deg);
+    transform: scale(1.2) rotate(-3deg);
+}
+.panel h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    
+    text-shadow: 2px 2px 2px rgba(255,255,255,0.8);
+}
+.panel h2:before {
+    content: '\2756';
+    padding-right: 5px;
+    opacity: .4;
+}
+.panel a {
+    color: #333;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+}
+.featured {
+    float: left;
+    /* PROGRESSIVE ENCHANCEMENT */
+    background-color: #f5dcdc;
+    background:linear-gradient(#f5dcdc, #f4bebe);
+    
+}
+.most-selled {
+    float: right;
+    background-color: #dcdcf5;
+    background: linear-gradient(#dcdcf5, #bebef4);
+}
+
+footer {
+    background-image: url(../img/fundo-rodape.png);
+    clear: both;
+    padding: 20px 0;
+}
+footer .content {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.social {
+    position: absolute;
+    top: 25px;
+    right: 0;
+}
+.social li {
+    float: left;
+    margin-left: 25px;
+}
+.social li a {
+    width: 32px;
+    height: 32px;
+    text-indent: -9999px;
+    display: block;
+}
+.social a[href*="facebook"] {
+background-image:url(../img/facebook.png);
+}
+.social a[href*="twitter"]{background-image: url(../img/twitter.png);}
+.social a[href*="plus.google"]{background-image: url(../img/googleplus.png);}
+
+a#control {cursor: pointer;}
+.pause, .play {display: block; position: absolute; top: 15px; right: 15px;}
+.pause {border-left: 10px solid #CCC; border-right: 10px solid #CCC; width: 5px; height: 30px;}
+.play {border-bottom: 15px solid transparent; border-left: 25px solid #CCC; border-top: 15px solid transparent;}
