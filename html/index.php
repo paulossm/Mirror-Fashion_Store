@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 939px)" />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="js/home.js" type="text/javascript"></script>
     <!-- **** Hack que renderiza as tags do HTML5 nas versões anteriores ao IE9 **** -->
     <!--[if lt IE 9]>
@@ -55,7 +56,7 @@
                 <ol>
                     <?php
                         $conexao = mysqli_connect("127.0.0.1","root","mirassol60","WD43");
-                        $dados = mysqli_query($conexao, "SELECT * FROM produtos ORDER BY data DESC LIMIT 4, 6");
+                        $dados = mysqli_query($conexao, "SELECT * FROM produtos ORDER BY data DESC LIMIT 0, 12");
 
                     while ($produto = mysqli_fetch_array($dados)):
                     ?>
@@ -72,6 +73,8 @@
                         </li>
                     <?php endwhile; ?>
                 </ol>
+                <!-- mostrar mais botão -->
+                <button type="button">mostrar mais</button>
             </section>
             
             <section class="panel most-selled"><!-- Mais Vendidos -->
@@ -79,7 +82,7 @@
                 <ol>
                 <?php
                     $conexao = mysqli_connect("127.0.0.1","root","mirassol60","WD43");
-                    $dados = mysqli_query($conexao,"SELECT * FROM produtos ORDER BY vendas DESC LIMIT 0, 6");
+                    $dados = mysqli_query($conexao,"SELECT * FROM produtos ORDER BY vendas DESC LIMIT 0, 12");
                 
 
                     while ($produto = mysqli_fetch_array($dados)):
@@ -95,6 +98,8 @@
                     </li>
                     <?php endwhile; ?>
                 </ol>
+                <!-- mostrar mais botão -->
+                <button type="button">mostrar mais</button>
             </section>
             
         </div>        

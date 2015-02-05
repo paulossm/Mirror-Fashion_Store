@@ -31,3 +31,16 @@ function pauseBanner() {
 }
     return false;
 }
+
+// botão para mostrar mais itens na página inicial
+$(document).ready(function() {
+    $(".featured").addClass("compactpanel");
+    $('.featured button').click(function(){
+                $('.featured').removeClass("compactpanel");
+            });
+
+            $(".most-selled").addClass("compactpanel");
+            $(".most-selled button").click(function(){
+                $(".most-selled").removeClass("compactpanel");
+            });
+});
