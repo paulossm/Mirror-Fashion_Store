@@ -7,6 +7,7 @@
     // Standards for page 
     $current_title = "Produto da Mirror Fashion"; 
     $current_styles = '<link rel="stylesheet" href="css/products.css" />';
+    $current_scripts = '<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>';
 ?>
         <!-- including header and footer -->
         <?php include("cabecalho.php"); ?>
@@ -41,6 +42,7 @@
                         <fieldset class="tamanhos">
                             <legend>Escolha o tamanho:</legend>
                             <input type="range" min="36" max="46" value="40" step="2" name="tamanho" id="tamanho">
+                            <output for="tamanho" name="numerotamanho">40</output>
                         </fieldset>
                         <input type="submit" class="comprar" value="comprar">                    
                     </form>
@@ -75,5 +77,10 @@
         </div>
 
         <?php include("rodape.php"); ?>
+        <script>
+                $('[name=tamanho]').on('change input',function(){
+                    $('[name=numerotamanho]').text(this.value);
+                });
+        </script>
     </body>
 </html>

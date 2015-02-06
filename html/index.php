@@ -1,20 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <title>Mirror Fashion</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=yes">
-    <link rel="stylesheet" type="text/css" href="css/reset.css" />
-    <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 939px)" />
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="js/home.js" type="text/javascript"></script>
-    <!-- **** Hack que renderiza as tags do HTML5 nas versões anteriores ao IE9 **** -->
-    <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-    <![endif]-->
+    
 </head>
 <body>
+    <?php 
+        $current_title = 'Mirror Fashion';
+        $current_scripts = '<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="js/home.js" type="text/javascript"></script>'; 
+    ?>
     <?php include("cabecalho.php"); ?>
         <div class="features container"> <!-- bloco de destaques -->
             <section class="search">

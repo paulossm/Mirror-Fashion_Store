@@ -229,6 +229,16 @@ section[class|="menu"] li {
 .compactpanel button {
     display: block;   
 }
+.tamanhos output {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 3px solid #666;
+    border-radius: 50%;
+    color: #555;
+}
 
 footer {
     background-image: url(../img/fundo-rodape.png);

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=yes">
         <!-- TITLE PROPERTIES -->
         <title><?php print @$current_title; ?></title>
         <!-- CSS STYLESHEETS -->
@@ -10,6 +10,11 @@
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="css/mobile.css" media="(max-width: 939px)">
         <?php print @$current_styles; ?>
+        <?php print @$current_scripts; ?>
+        <!-- **** Hack que renderiza as tags do HTML5 nas versões anteriores ao IE9 **** -->
+        <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <![endif]-->
     </head>
     <body>    
     <!-- cabeçalho -->
