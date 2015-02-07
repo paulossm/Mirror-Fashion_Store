@@ -8,6 +8,8 @@
         $current_title = 'Mirror Fashion';
         $current_scripts = '<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script src="js/home.js" type="text/javascript"></script>'; 
+        $current_fonts = "<!-- web fonts -->
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans|Bad+Script' rel='stylesheet' type='text/css'>"
     ?>
     <?php include("cabecalho.php"); ?>
         <div class="features container"> <!-- bloco de destaques -->

@@ -14,6 +14,9 @@
         </figure>
         <p>Compre suas <strong>roupas</strong> e <strong>acessórios</strong> na Mirror Fashion. Acesse <a href="index.html">nossa loja</a> ou entre em contato 
 se tiver dúvidas. Conheça também nossa <a href="#historia">história</a> e nossos <a href="#diferenciais">diferenciais</a>.</p>
+        <br />
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d234793.64747742034!2d-49.97432645!3d-23.14643805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c0264dfb650a67%3A0x5e73a1bcbcfd5760!2sJacarezinho%2C+PR!5e0!3m2!1spt-BR!2sbr!4v1423233709110" width="400" height="300" frameborder="0" style="border:0"></iframe>
+        <br />
         <h2 id="historia">História</h2>
         <figure id="familia-pelho">
             <img src="img/familia-pelho.jpg" alt="A Família Pelho" />
@@ -36,6 +39,9 @@ Brasil, há <strong>240 mil funcionários</strong>, além dos 890 mil brasileiro
         <p>Dada a importância econômica da empresa para o Brasil, a família Pelho já recebeu diversos prêmios, 
 homenagens e condecorações. Todos os presidentes do Brasil já visitaram as instalações da Mirror 
 Fashion, além de presidentes da União Européia, Ásia e o secretário-geral da ONU.</p>
+            
+        <iframe width="420" height="315" src="https://www.youtube.com/embed/Tb06abHE4hY" frameborder="0" allowfullscreen></iframe>
+            
         <h2 id="diferenciais">Diferenciais</h2>
         <ul>
             <li>Menor preço do varejo, garantido</li>

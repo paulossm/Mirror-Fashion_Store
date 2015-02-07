@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="css/mobile.css" media="(max-width: 939px)">
+        <?php print @$current_fonts; ?>
         <?php print @$current_styles; ?>
         <?php print @$current_scripts; ?>
         <!-- **** Hack que renderiza as tags do HTML5 nas versões anteriores ao IE9 **** -->
