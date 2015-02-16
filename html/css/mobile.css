@@ -1,14 +1,17 @@
 @charset "utf-8";
 .container {
     width: 96% !important;
+    padding: 0% 2%;
 }
 header h1
 {
+    margin: 20px auto 0px;
     text-align: center;
 }
 header h1 img
 {
-    max-width: 50%;
+    width: 100px;
+    clear: both;
 }
 .sacola
 {
@@ -16,6 +19,7 @@ header h1 img
 }
 .options-menu
 {
+    display: none;
     position: static;
     text-align: center;
 }
@@ -24,26 +28,136 @@ header h1 img
     display: inline-block;
     margin: 5px;
 }
+.social-links {
+    position: static;
+    float: right;
+}
+.social-links h3 {
+    display: none; 
+}
+.banners {
+    float: left;
+    width: 100%;
+    height: auto;
+}
+.banners img {
+    width: 100%;
+}
 
+aside#control-wrapper {
+    position: relative;
+    left: 45%;
+}
+.pause, .play {
+    position: static;
+}
+
+/* ~ FERRAMENTA DE BUSCA / MENU DE NAVEGAÇÃO PRINCIPAL ~ */
+.search h2 {
+    display: none;   
+}
 .search, .menu-department, .features img {
     margin-right: 0px;
     width: 100%;
 }
+.search input {
+    vertical-align: middle;
+}
+.search input[type=search]{
+    width: 80%;
+    height: 28px;
+    padding: 1% 1%;
+    border-radius: 0px;
+}
+.search input[type=image]{
+    width: 24px;
+}
+
+
+
+
+/* ~ PAINÉIS DE PRODUTOS ~ */
+.panels {
+    width: 100%;   
+}
 section.panel {
     width: auto;
+    margin-bottom: 20px;
 }
 section.panel ol li {
-    width: 30%;
+    width: 45%;
+    margin-bottom: 20px;
 }
 .panel img {
     width: 100%;
 }
-features a.play, features a.pause {
-    top: auto;
-    right: auto;
-    left: 10px;
-    bottom: 10px;
+aside.promotions {
+    width: 100%;
+    margin-bottom: 30px;
 }
+.partners ol li {
+    display: block;
+    margin: 5px auto;
+}
+.partners ol li figure{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.social-media .networks {
+    width: auto;
+    margin-bottom: 30px;
+}
+.social-media .contacts {
+    width: auto;   
+}
+.networks .instagram {
+    padding-left: 0px;
+    margin-left: auto;
+    
+    margin-right: auto;
+}
+.networks .youtube, .networks .instagram {
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.networks .instagram .pictures li:first-child {
+    width: 100%;
+    height: auto;
+    float: left;
+    clear: both;
+    margin-right: 6px;
+}
+.instagram .pictures li {
+    width: 22%;
+}
+.social-media .contact {
+    width: 100%;   
+}
+.contact h3 {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: -13px;
+}
+.contact address, .contact p {
+    font-size: 16px;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 20px;
+    
+}
+.contact address::before, .contact p::before {
+    position: static;
+    margin-bottom: 10px;
+}
+footer p#creator {
+    position: static;
+    margin: 15px auto;
+    text-align: center;
+}
+
+
 
 @media (min-width: 480px) {
     header h1 {
