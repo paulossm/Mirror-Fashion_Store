@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    
-</head>
-<body>
-    <?php 
+<?php 
         $current_title = 'Mirror Fashion';
         $current_scripts = '<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script src="js/home.js" type="text/javascript"></script>'; 
@@ -16,8 +10,8 @@
             <section class="search">
                 <h2>Busca</h2>
                 <form action="http://www.google.com.br/search" id="form-search" onsubmit="validaBusca()">
-                    <input type="search" name="q" id="q">
-                    <input type="image" src="img/busca.png">
+                    <input type="search" name="q" id="q" placeholder="busca...">
+                    <input type="image" src="img/search-icon.png">
                 </form>
             </section><!-- fim campo de busca -->
 
@@ -42,17 +36,22 @@
                     </ul>
                 </nav>
             </section><!-- fim menu de departamentos -->
-            <img src="img/destaque-home.png" alt="Promoção Big City Night" />
-            <a id="control" class="pause" onClick="pauseBanner()"></a>
+            <section class="banners">
+                <img src="img/Big-City-Nights_banner.jpg" alt="Big City Nights" />
+                <aside id="control-wrapper">
+                <a id="control" class="pause" onClick="pauseBanner()"></a>
+                </aside>
+            </section>
         </div> <!-- fim do bloco de destaques e navegação -->
-    
-        <div class="panels container"> <!-- Painéis de Novidades e os Mais vendidos -->
+        
+        <article class="container">
+        <div class="panels"> <!-- Painéis de Novidades e os Mais vendidos -->
             <section class="panel featured"><!-- Novidades -->
-                <h2>Novidades</h2>
+                <h2><span>mais</span> novos</h2>
                 <ol>
                     <?php
                         $conexao = mysqli_connect("127.0.0.1","root","mirassol60","WD43");
-                        $dados = mysqli_query($conexao, "SELECT * FROM produtos ORDER BY data DESC LIMIT 0, 12");
+                        $dados = mysqli_query($conexao, "SELECT * FROM produtos ORDER BY data DESC LIMIT 0, 4");
 
                     while ($produto = mysqli_fetch_array($dados)):
                     ?>
@@ -63,22 +62,22 @@
                                     <img src='img/produtos/miniatura<?= $produto["id"] ?>.png'
                                         alt='<?= $produto["nome"] ?>'>
 
-                                   <figcaption><?= $produto["nome"] ?> por <strong><?= $produto["preco"] ?></strong></figcaption>
+                                   <figcaption><p><?= $produto["nome"] ?></br><em><?= $produto["preco"] ?></em></p></figcaption>
                                 </figure>
                             </a>
                         </li>
                     <?php endwhile; ?>
                 </ol>
-                <!-- mostrar mais botão -->
-                <button type="button">mostrar mais</button>
+                <!-- mostrar mais botão 
+                <button type="button">mostrar mais</button> -->
             </section>
             
             <section class="panel most-selled"><!-- Mais Vendidos -->
-                <h2>Mais Vendidos</h2>
+                <h2><span>mais</span> desejados</h2>
                 <ol>
                 <?php
                     $conexao = mysqli_connect("127.0.0.1","root","mirassol60","WD43");
-                    $dados = mysqli_query($conexao,"SELECT * FROM produtos ORDER BY vendas DESC LIMIT 0, 12");
+                    $dados = mysqli_query($conexao,"SELECT * FROM produtos ORDER BY vendas DESC LIMIT 0, 4");
                 
 
                     while ($produto = mysqli_fetch_array($dados)):
@@ -88,17 +87,96 @@
                         <a href='produto.php?id=<?= $produto["id"] ?>'>
                             <figure>
                                 <img src='img/produtos/miniatura<?= $produto["id"] ?>.png' />
-                                <figcaption><?= $produto["nome"] ?> por <strong><?= $produto["preco"] ?></strong></figcaption>
+                                <figcaption>
+                                    <p><?= $produto["nome"] ?></p>
+                                    <p><em><?= $produto["preco"] ?></em></p></figcaption>
                             </figure>
                         </a>
                     </li>
                     <?php endwhile; ?>
                 </ol>
-                <!-- mostrar mais botão -->
-                <button type="button">mostrar mais</button>
+                <!-- mostrar mais botão 
+                <button type="button">mostrar mais</button>-->
             </section>
             
-        </div>        
+        </div>
+        <aside class="promotions">
+            <h2>Edição 2015.2</h2>
+            <figure>
+                <img src="img/magazine.jpg" alt="Capa da Revista Mirror Magazine edição 2015.2">
+            </figure>
+            
+            <a href=""><p class="shipping">Frete Grátis!<br />
+            <span>Nas compras acima de R$ 80</span>
+            </p></a>
+            <a href=""><p class="gift-card">Cartão Presente<br/>
+            <span>Para quem você ama</span>
+            </p></a>
+        </aside>
+        <section class="partners container">
+            <h2><span>Parceiros</span> Mirror</h2>
+            <ol>
+                <li>
+                    <figure>
+                        <img src="img/pressets/vera-wang.jpg" alt="Vera Wang" />
+                    </figure>
+                </li>
+                
+                <li>
+                    <figure>
+                        <img src="img/pressets/PS-JEANS-LOGO.jpg" alt="Paul Smith Jeans" />
+                    </figure>
+                </li>
+                
+                <li>
+                    <figure>
+                        <img src="img/pressets/Secret-Of-Fashion-520x384.jpg" alt="Secret of Fashion - India" />
+                    </figure>
+                </li>
+                
+                <li>
+                    <figure>
+                        <img src="img/pressets/LOGO-Lacoste-2500x1666.jpg" alt="Lacoste" />
+                    </figure>
+                </li>
+            </ol>
+        </section>
+        <section class="social-media container">
+            <div class="networks">
+                <h2>Nas Redes</h2>
+                <div class="youtube">
+                    <iframe width="360" height="230" src="https://www.youtube.com/embed/Tb06abHE4hY" frameborder="0" allowfullscreen></iframe>
+                    <p>Desfile mirror 2014</p>
+                    <a>Confira os melhores momentos</a>
+                    
+                </div>
+                <div class="instagram">
+                    <ul class="pictures">
+                        <li><figure><img src="img/pressets/social-network/15-bw-fashion-photographer1.jpg" alt="instagram one" /></figure></li>
+                        <li><figure><img src="img/pressets/social-network/15-bw-fashion-photographer1.jpg" alt="instagram one" /></figure></li>
+                        <li><figure><img src="img/pressets/social-network/15-bw-fashion-photographer1.jpg" alt="instagram one" /></figure></li>
+                        <li><figure><img src="img/pressets/social-network/15-bw-fashion-photographer1.jpg" alt="instagram one" /></figure></li>
+                        <li><figure><img src="img/pressets/social-network/15-bw-fashion-photographer1.jpg" alt="instagram one" /></figure></li>
+                    </ul>
+                    <a class="insta-link" href="instagram.com/mirrorfashion">@MirrorFashion</a>
+                </div>
+            </div>
+            <div class="contact">
+                <h2><span>Como</span> encontrar</h2>
+                <h3>Estamos em:</h3>
+                <address>Avenida sem nome, 774<br />
+                Bloco II - 121 - 3º Andar<br />
+                Jardim Sagrado - Jacarezinho - Paraná</address>
+                
+                <h3>Atendemos pelo:</h3>
+                <p class="phones">+55 21 4005-9999 (SP)<br />
+                    +55 34 4005-9999 (PR)</p>
+                
+                <h3>dúvidas ou sugestões:</h3>
+                <p class="mail">contato@mirrorstore.hol.es</p>
+            </div>
+        </section>
+        </article>
         <?php include("rodape.php"); ?>
 </body>
 </html>
