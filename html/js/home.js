@@ -8,7 +8,7 @@ function validaBusca() {
 }
 
 // function to change features banners
-var banners = ["img/destaque-home.png", "img/destaque-home-2.png"];
+var banners = ["img/Big-City-Nights_banner.jpg", "img/Sunny-Days_banner.jpg"];
 var altes = ["Big City Nights", "Sunny Days"];
 var bannerAtual = 0;
 function changeBanner() {
