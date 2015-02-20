@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="css/mobile.css" media="(max-width: 1200px)">
+        <link rel="stylesheet" href="css/toggle-navigation/assets/css/menu.css">
         <?php print @$current_fonts; ?>
         <?php print @$current_styles; ?>
         <?php print @$current_scripts; ?>
@@ -25,16 +26,19 @@
             <img src="img/pressets/Logo-Mirror-Store.png" alt="Logo Mirror Fashion" />
             <p><b>Mirror</b>Fashion</p>
         </h1>
-        <nav class="options-menu">
-            <ul class="nav-links">
+        <nav class="options-menu mainMenu">
+            <label for="toggleMenu" class="menuTitle">menu</label>
+            <input type="checkbox" id="toggleMenu" />
+            
+            <ul class="nav-links menu">
                 <li><a href="#">Sua Conta</a></li>
                 <li><a href="#">Lista de Desejos</a></li>
                 <li><a href="#">Cartão Fidelidade</a></li>
                 <li><a href="sobre.php">Sobre</a></li>
                 <li><a href="#">Ajuda</a></li>
-            </ul>
-            <ul class="social-links">
-                <h3>Siga a Mirror Store</h3>
+            <!--</ul>
+            <ul class="social-links">-->
+                <li><h3>Siga a Mirror Store:</h3></li>
                 <li><a href="http://facebook.com/mirrorfashion" title="Curta nossa fanpage">Facebook</a></li>
                 <li><a href="http://twitter.com/mirrorfashion" title="Siga-nos no twitter">Twitter</a></li>
                 <li><a href="http://plus.google.com/mirrorfashion" title="recomende-nos no Google+">Google+</a></li>
