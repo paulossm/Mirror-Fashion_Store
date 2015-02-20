@@ -7,22 +7,21 @@ body {
 
 /*** cabeçalho ***/
 p.wallet {
-    background: url(../img/sacola.png) no-repeat top right;
-    padding-right: 35px;
-    padding-top: 8px;
+    background: url(../img/sacola.png) no-repeat top left;
+    padding-left: 35px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-size: 14px;
-    text-align: right;
-    width: 140px;
-    position: absolute;
-    top: 0;
-    right: 0;
+    text-align: left;
+    width: 200px;
+    margin-left: 15px;
 }
 .hidden {
     display: none;   
 }
 
 h1 {
-    margin: 50px auto 25px;
+    margin: 0px auto 25px;
     font-family: Raleway;
 }
 h1 img {
@@ -41,36 +40,82 @@ header {
     width: 100%;
     margin: 0;
     text-align: center;
+    position: relative;
+    padding-top: 4%;
 }
 .container {
     margin: 0 auto;
     width: 1200px;
 }
-
 /* TOP NAVIGATION */
 nav.options-menu {
     position: absolute;
     top: 2%;
-    left: 30%;
-    margin-bottom: 20px;
+    left: 20%;
 }
-nav.options-menu ul {
+nav.options-menu ul, nav.options-menu h3 {
+    display: inline-block;
+}
+nav.options-menu ul li {
+    display: inline-block;
+    margin-right: 25px;
+}
+nav.options-menu ul.nav-links {
     font-size: 14px;
 }
-nav.options-menu li {
-    display: inline;
-    margin-left: 30px;
+nav.options-menu ul.nav-links::after, nav.options-menu ul.social-links::after {
+    content: '|';   
 }
-nav.options-menu a {
+nav.options-menu ul.nav-links a {
     color: #000;
     text-decoration: blink;
 }
-nav.options-menu a:hover {
+nav.options-menu ul.nav-links a:hover {
     opacity: .5;
 }
-nav.options-menu a:active {
+nav.options-menu ul.nav-links a:active {
     color: #867dc6;   
 }
+nav.options-menu ul.social-links h3 {
+    padding: 10px;
+    color: black;
+    font-size: 13px;
+}
+nav.options-menu ul.social-links li {
+    margin-right: 8px;
+}
+ul.social-links li a {
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+    text-indent: -9999px;
+    display: block;
+    
+    transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    
+    position: relative;
+    bottom: 2px;
+}
+ul.social-links li a:hover {
+    filter:invert(100%);
+    -moz-filter: invert(100%);
+    -webkit-filter: invert(100%);
+    
+    transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+ul.social-links a[href*="facebook"] {background:url(../img/icons/facebook.png) center center no-repeat, #FFFFFF;}
+ul.social-links a[href*="twitter"] {background: url(../img/icons/twitter.png) center center no-repeat, #FFFFFF;}
+ul.social-links a[href*="plus.google"] {background: url(../img/icons/google-plus.png) center center no-repeat, #FFFFFF;}
+/* end header */
+
+
+
 
 
 .features { 
@@ -196,7 +241,7 @@ aside.promotions > h2 {
     padding: 0%;
     width: 100%;
 }
-article h2 {
+h2 {
     font-family: Raleway, sans-serif;
     font-size: 18px;
     font-weight: normal;
@@ -208,7 +253,7 @@ article h2 {
     padding: 5px 0px;
 
 }
-article h2 span {
+h2 span {
     background-color: #FFF;
     color: #000;
     padding: 5px 5px;
@@ -331,18 +376,6 @@ article h2 span {
 .compactpanel button {
     display: block;   
 } */
-
-.tamanhos output {
-    display: inline-block;
-    height: 40px;
-    width: 40px;
-    line-height: 40px;
-    text-align: center;
-    border: 3px solid #666;
-    border-radius: 50%;
-    color: #555;
-}
-
 
 /* PARTNERS LIST */
 .partners {
@@ -531,49 +564,6 @@ footer p#creator{
     font-size: 11px;
     opacity: .7;
 }
-
-.social-links {
-    position: absolute;
-    top: 2%;
-    right: 90px;
-    text-align: center;
-}
-.social-links ul {
-    margin: 10px 0px;   
-}
-.social-links h3 {
-    font-size: 13px;
-}
-.social-links li {
-    float: left;
-    margin: 0px 8px;
-}
-.social-links li a {
-    width: 30px;
-    height: 30px;
-    padding: 3px;
-    text-indent: -9999px;
-    display: block;
-    
-    transition: all .3s linear;
-    -moz-transition: all .3s linear;
-    -webkit-transition: all .3s linear;
-    -o-transition: all .3s linear;
-}
-.social-links li a:hover {
-    filter:invert(100%);
-    -moz-filter: invert(100%);
-    -webkit-filter: invert(100%);
-    
-    transition: all .3s linear;
-    -moz-transition: all .3s linear;
-    -webkit-transition: all .3s linear;
-    -o-transition: all .3s linear;
-}
-.social-links a[href*="facebook"] {background:url(../img/icons/facebook.png) center center no-repeat, #FFFFFF;}
-.social-links a[href*="twitter"] {background: url(../img/icons/twitter.png) center center no-repeat, #FFFFFF;}
-.social-links a[href*="plus.google"] {background: url(../img/icons/google-plus.png) center center no-repeat, #FFFFFF;}
-
 
 aside#control-wrapper {
     width: auto;

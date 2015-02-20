@@ -1,7 +1,7 @@
 <?php
     // DataBase connection
     $id = $_POST["id"];
-    $conexao = mysqli_connect("127.0.0.1","root","mirassol60","WD43");
+    $conexao = mysqli_connect("localhost","root","mirassol60","wd43");
     $dados = mysqli_query($conexao,"SELECT * FROM produtos WHERE id = $id");
     $produto = mysqli_fetch_array($dados);
 ?>

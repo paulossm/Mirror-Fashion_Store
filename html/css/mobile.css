@@ -10,8 +10,12 @@ header h1
 }
 header h1 img
 {
-    width: 100px;
-    clear: both;
+    width: 60px;
+    clear: none;
+}
+header h1 p {
+    margin-left: 15px;
+    font-size: .9em;
 }
 .sacola
 {
@@ -19,21 +23,17 @@ header h1 img
 }
 .options-menu
 {
-    display: none;
     position: static;
     text-align: center;
 }
-.options-menu ul li
+.options-menu ul.nav-links li
 {
     display: inline-block;
     margin: 5px;
 }
-.social-links {
+ul.social-links {
     position: static;
     float: right;
-}
-.social-links h3 {
-    display: none; 
 }
 .banners {
     float: left;
@@ -174,9 +174,6 @@ footer p#creator {
 }
 }
 @media (min-width: 720px) {
-    header h1 {
-        text-align: left;
-    }
     .menu-opcoes {
         position: absolute;
     }
@@ -198,5 +195,9 @@ footer p#creator {
     .destaque img {
         width: 69%;
     }
-    
+}
+@media (min-width: 767px) {
+     .container {
+        width: 700px;   
+    }  
 }

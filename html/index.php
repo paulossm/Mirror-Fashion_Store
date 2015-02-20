@@ -3,7 +3,7 @@
         $current_scripts = '<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script src="js/home.js" type="text/javascript"></script>'; 
         $current_fonts = "<!-- web fonts -->
-    <link href='http://fonts.googleapis.com/css?family=PT+Sans|Bad+Script' rel='stylesheet' type='text/css'>"
+    <link href='http://fonts.googleapis.com/css?family=Raleway:300,400,600' rel='stylesheet' type='text/css'>"
     ?>
     <?php include("cabecalho.php"); ?>
         <div class="features container"> <!-- bloco de destaques -->
@@ -50,7 +50,7 @@
                 <h2><span>mais</span> novos</h2>
                 <ol>
                     <?php
-                        $conexao = mysqli_connect("127.0.0.1","root","mirassol60","WD43");
+                        $conexao = mysqli_connect("localhost","root","mirassol60","WD43");
                         $dados = mysqli_query($conexao, "SELECT * FROM produtos ORDER BY data DESC LIMIT 0, 4");
 
                     while ($produto = mysqli_fetch_array($dados)):
@@ -76,7 +76,7 @@
                 <h2><span>mais</span> desejados</h2>
                 <ol>
                 <?php
-                    $conexao = mysqli_connect("127.0.0.1","root","mirassol60","WD43");
+                    $conexao = mysqli_connect("localhost","root","mirassol60","WD43");
                     $dados = mysqli_query($conexao,"SELECT * FROM produtos ORDER BY vendas DESC LIMIT 0, 4");
                 
 

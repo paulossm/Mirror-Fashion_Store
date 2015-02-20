@@ -1,6 +1,6 @@
 <?php 
     // DataBase connection
-    $conexao = mysqli_connect("127.0.0.1","root","mirassol60","WD43");
+    $conexao = mysqli_connect("localhost","root","mirassol60","WD43");
     $dados = mysqli_query($conexao, "SELECT * FROM produtos WHERE id = $_GET[id]");
     $produto = mysqli_fetch_array($dados);
     
@@ -9,12 +9,13 @@
     $current_styles = '<link rel="stylesheet" href="css/products.css" />';
     $current_scripts = '<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>';
     $current_fonts = "<!-- web fonts -->
-    <link href='http://fonts.googleapis.com/css?family=PT+Sans|Bad+Script' rel='stylesheet' type='text/css'>"
+    <link href='http://fonts.googleapis.com/css?family=Raleway:300,400,600' rel='stylesheet' type='text/css'>"
 ?>
         <!-- including header and footer -->
         <?php include("cabecalho.php"); ?>
         <div class="produto-back">
-            <div class="container">    
+            <div class="container">
+                <h2><span>Detalhes do</span> Produto</h2>
                 <div class="produtos">
                     <h1><?= $produto["nome"] ?></h1>
                     <p>Por apenas <?= $produto["preco"] ?></p>
@@ -59,7 +60,7 @@
                     <div class="g-plusone" data-size="tall" data-href="http://mirrorfashion.net/loja/produto.php?id=9"></div>
                 </div>
                 <div class="detalhes">
-                    <h2>Detalhes do produto</h2>
+                    <h2>Mais Informações</h2>
                     <p><?= $produto["descricao"] ?></p>
                     <table>
                         <thead>
