@@ -21,12 +21,14 @@ header h1 p {
 {
     display: none;
 }
-.options-menu
+nav.options-menu
 {
     position: static;
     text-align: center;
+    left: 0;
+    top: 0;
 }
-.options-menu ul.nav-links li
+/*.options-menu ul.nav-links li
 {
     display: inline-block;
     margin: 5px;
@@ -34,7 +36,7 @@ header h1 p {
 ul.social-links {
     position: static;
     float: right;
-}
+}*/
 .banners {
     float: left;
     width: 100%;
@@ -200,4 +202,13 @@ footer p#creator {
      .container {
         width: 700px;   
     }  
+}
+@media (max-width: 1200px) {
+    nav.options-menu h3::before/*, nav.options-menu ul.social-links::after */{
+        content: none;
+    }
+    nav.options-menu h3 {
+        font-weight: 700;
+        font-size: 18px;
+    }
 }
