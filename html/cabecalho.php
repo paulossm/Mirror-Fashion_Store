@@ -27,7 +27,7 @@
             <p><b>Mirror</b>Fashion</p>
         </h1>
         <nav class="options-menu mainMenu">
-            <label for="toggleMenu" class="menuTitle">menu</label>
+            <label for="toggleMenu" class="menuTitle"></label>
             <input type="checkbox" id="toggleMenu" />
             
             <ul class="nav-links menu">

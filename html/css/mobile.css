@@ -27,6 +27,7 @@ nav.options-menu
     text-align: center;
     left: 0;
     top: 0;
+    margin: 15px 0px;
 }
 /*.options-menu ul.nav-links li
 {
@@ -163,7 +164,7 @@ footer p#creator {
 
 @media (min-width: 480px) {
     header h1 {
-        margin: 5px 0;
+        margin: 20px auto 0px;
     }
     .menu-departments {
         padding-bottom: 10px;
