@@ -13,24 +13,45 @@ $this->pageTitle=Yii::app()->name;
             <div class="col-lg-12">
                 
                     <div class="col-lg-4">
+                        <div class="thumbnail destaque">
+                            <img src="images/studentwithablet.jpg" class="img-responsive" alt="Estudante com Tablet" />
+                            <div class="caption">
+                            <h3>Acesse datas e horários das aulas, provas e entrega de trabalhos.</h3>
+                            <p>O Sistema Web te deixa por dentro de todas as atividades da sua disciplina. você pode receber avisos sobre datas de provas e lembretes de entrega de trabalhos via e-mail.</p>
+                            <!--<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>-->
+                            </div>
+                        </div>  
+                        
+                        <!--
                         <figure class="destaque">
                             <img src="images/studentwithablet.jpg" class="img-responsive" alt="Estudante com Tablet" />
                             <figcaption>
                                 <h3>Acesse datas e horários das aulas, provas e entrega de trabalhos.</h3>
                                 <p>O Sistema Web te deixa por dentro de todas as atividades da sua disciplina. você pode receber avisos sobre datas de provas e lembretes de entrega de trabalhos via e-mail.</p>
                             </figcaption>
-                        </figure>
+                        </figure>-->
                     </div>
                     <div class="col-lg-4">
+                        <div class="thumbnail destaque">
+                            <img src="images/university.jpg" class="img-responsive" alt="Universidade" />
+                            <div class="caption">
+                            <h3>Integração com o sistema de gestão de atividades acadêmicas da Universidade.</h3>
+                            <p>com apenas um cadastro, você tem acesso a todos os recursos disponíveis pelo sistema.</p>
+                            <!--<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>-->
+                            </div>
+                        </div>
+                        
+                        <!--
                         <figure class="destaque">
                             <img src="images/university.jpg" class="img-responsive" alt="Universidade" />
                             <figcaption>
                                 <h3>Integração com o sistema de gestão de atividades acadêmicas da Universidade.</h3>
                                 <p>com apenas um cadastro, você tem acesso a todos os recursos disponíveis pelo sistema.</p>
                             </figcaption>
-                        </figure>
+                        </figure>-->
                     </div>
-                    <div class="col-lg-4" id="explicit">
+                    <div class="col-lg-4">
+                        <div class="thumbnail" id="explicit">
                         <h3>Recursos</h3>
                         <ul>
                             <li>Turmas, Horários e Calendário Acadêmico</li>
@@ -42,6 +63,7 @@ $this->pageTitle=Yii::app()->name;
                         <p>Para mais detalhes sobre esta aplicação, por favor leia
                         a <a href="http://www.yiiframework.com/doc/">documentação</a>.
                         Você também pode perguntar em nosso <a href="http://www.yiiframework.com/forum/">forum</a>.</p>
+                        </div>
                     </div>
             </div>
             <div class="col-md-3">

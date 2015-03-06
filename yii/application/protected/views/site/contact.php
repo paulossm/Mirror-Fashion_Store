@@ -3,15 +3,13 @@
 /* @var $model ContactForm */
 /* @var $form CActiveForm */
 
-$this->pageTitle=Yii::app()->name . ' - Contact Us';
+$this->pageTitle=Yii::app()->name . ' - Contato';
 $this->breadcrumbs=array(
-	'Contact',
+	'Contato',
 );
 ?>
 
-<h1>Contact Us</h1>
-
-<?php if(Yii::app()->user->hasFlash('contact')): ?>
+<?php if(Yii::app()->user->hasFlash('contato')): ?>
 
 <div class="flash-success">
 	<?php echo Yii::app()->user->getFlash('contact'); ?>
@@ -19,8 +17,9 @@ $this->breadcrumbs=array(
 
 <?php else: ?>
 
+<div class="col-lg-6 col-sm-12 col-md-6">
 <p>
-If you have business inquiries or other questions, please fill out the following form to contact us. Thank you.
+Preencha o formulátio abaixo para entrar em contato.
 </p>
 
 <div class="form">
@@ -33,7 +32,7 @@ If you have business inquiries or other questions, please fill out the following
 	),
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+	<p class="note">Obserque que os campos com <span class="required">*</span> são de preenchimento obrigatório.</p>
 
 	<?php echo $form->errorSummary($model); ?>
 
@@ -81,5 +80,8 @@ If you have business inquiries or other questions, please fill out the following
 <?php $this->endWidget(); ?>
 
 </div><!-- form -->
-
+</div>
+<div class="col-lg-6 col-ms-12 col-md-6">
+    <h2>Mapas</h2>
+</div>
 <?php endif; ?>

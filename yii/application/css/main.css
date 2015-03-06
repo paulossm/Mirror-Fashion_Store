@@ -17,11 +17,6 @@ body
     font-weight: 700;
 }
 
-#content
-{
-    
-}
-
 #sidebar
 {
 	padding: 20px 20px 20px 0;
@@ -32,6 +27,7 @@ body
     background-color: #c74732;
 	font-size: 0.9em;
 	text-align: left;
+    margin-top: 15px;
 }
 #footer p {
     padding: 15px;
@@ -59,6 +55,9 @@ body
     border-radius: 0;
     
     background: none;
+    border-left: none;
+    border-right: none;
+    border-top: none;
 }
 #user-options a:hover {
     background-color: rgba(245,245,245,.4);   
@@ -103,23 +102,23 @@ body
 #explicit {
     background-color: #c74732;
     color: #f8f8f8;
+    
+    width: 90%;
+    padding: 1% 5%;
 }
-figure.destaque {
+div.destaque {
     width: 100%;
     display: block;
     position: relative;
     margin: 0px;
-    
 }
-figure.destaque img {
+div.destaque img {
     filter: contrast(.8);  
     height: 220px;
     overflow: hidden;
 }
-figure.destaque figcaption {
-    
-}
-figure.destaque figcaption h3 {
+
+div.destaque div.caption h3 {
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     font-weight: 400;
     text-transform:  uppercase;
@@ -127,7 +126,7 @@ figure.destaque figcaption h3 {
     font-size: 16px;
     
 }
-figure.destaque figcaption p {
+div.destaque .caption p {
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     font-weight: 300;
     color: #000;
@@ -135,7 +134,9 @@ figure.destaque figcaption p {
     font-size: 14px;
     
 }
-
+div.thumbnail {
+    border-radius: 0;   
+}
 div.flash-error, div.flash-notice, div.flash-success
 {
 	padding:.8em;
@@ -195,8 +196,13 @@ div.breadcrumbs
 {
 	font-size: 0.9em;
 	padding: 5px 20px;
+    
+    margin-bottom: 10px;
+    margin-top: 60px;
 }
-
+div.breadcrumbs a {
+    color: #c74732;   
+}
 div.breadcrumbs span
 {
 	font-weight: bold;
@@ -287,4 +293,96 @@ div.search-form
 #explicit a, #footer a {
     color: #F8F8F8;
     text-decoration: underline;
+}
+
+/* WEATHER JQUERY PLUGIN (about.php "line 95") */
+#weather {
+  width: 100%;
+  margin: 0px auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+i {
+  color: #fff;
+  font-family: weather;
+  font-size: 150px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.0;
+}
+
+.icon-0:before { content: ":"; }
+.icon-1:before { content: "p"; }
+.icon-2:before { content: "S"; }
+.icon-3:before { content: "Q"; }
+.icon-4:before { content: "S"; }
+.icon-5:before { content: "W"; }
+.icon-6:before { content: "W"; }
+.icon-7:before { content: "W"; }
+.icon-8:before { content: "W"; }
+.icon-9:before { content: "I"; }
+.icon-10:before { content: "W"; }
+.icon-11:before { content: "I"; }
+.icon-12:before { content: "I"; }
+.icon-13:before { content: "I"; }
+.icon-14:before { content: "I"; }
+.icon-15:before { content: "W"; }
+.icon-16:before { content: "I"; }
+.icon-17:before { content: "W"; }
+.icon-18:before { content: "U"; }
+.icon-19:before { content: "Z"; }
+.icon-20:before { content: "Z"; }
+.icon-21:before { content: "Z"; }
+.icon-22:before { content: "Z"; }
+.icon-23:before { content: "Z"; }
+.icon-24:before { content: "E"; }
+.icon-25:before { content: "E"; }
+.icon-26:before { content: "3"; }
+.icon-27:before { content: "a"; }
+.icon-28:before { content: "A"; }
+.icon-29:before { content: "a"; }
+.icon-30:before { content: "A"; }
+.icon-31:before { content: "6"; }
+.icon-32:before { content: "1"; }
+.icon-33:before { content: "6"; }
+.icon-34:before { content: "1"; }
+.icon-35:before { content: "W"; }
+.icon-36:before { content: "1"; }
+.icon-37:before { content: "S"; }
+.icon-38:before { content: "S"; }
+.icon-39:before { content: "S"; }
+.icon-40:before { content: "M"; }
+.icon-41:before { content: "W"; }
+.icon-42:before { content: "I"; }
+.icon-43:before { content: "W"; }
+.icon-44:before { content: "a"; }
+.icon-45:before { content: "S"; }
+.icon-46:before { content: "U"; }
+.icon-47:before { content: "S"; }
+
+#weather h2 {
+  margin: 0 0 8px;
+  color: #fff;
+  font-size: 100px;
+  font-weight: 300;
+  text-align: center;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+#weather ul {
+  margin: 0;
+  padding: 0;
+}
+
+#weather li {
+  background: #fff;
+  background: rgba(255,255,255,0.90);
+  padding: 20px;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+#weather .currently {
+  margin: 0 20px;
 }

@@ -18,6 +18,13 @@
     <link href='http://fonts.googleapis.com/css?family=Cabin:400,500,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
     
+    <!-- weather css -->
+    <link rel="stylesheet" type="text/css" href="../../extensions/weather/css/styles.css" />
+    
+    <!-- jQuery (necessário para os plugins JavaScript do Bootstrap e HighCharts) -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="<?php echo Yii::app()->request->baseUrl; ?>/css/bootstrap/js/bootstrap.min.js"></script>
+    
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 
@@ -42,7 +49,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <?php $this->widget('zii.widgets.CMenu',array(
                                 'items'=>array(
-                                    array('label'=>'Home', 'url'=>array('/site/index')),
+                                    array('label'=>'Home', 'url'=>array('../')),
                                     array('label'=>'Dashboard', 'url'=>array('/site/page', 'view'=>'about')),
                                     array('label'=>'Contato', 'url'=>array('/site/contact')),
                                     array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
@@ -53,46 +60,33 @@
                 </div>
             </nav><!-- mainmenu -->
         </div><!--./col-->
-    </div><!--/.row-->
     
-    <div id="header">
+    
+    <!--<div id="header">
 	<div class="container">
 	</div>
-    </div>
+    </div>-->
     
 	<?php if(isset($this->breadcrumbs)):?>
 		<?php $this->widget('zii.widgets.CBreadcrumbs', array(
 			'links'=>$this->breadcrumbs,
 		)); ?><!-- breadcrumbs -->
 	<?php endif?>
-    <div class="row">
 	<?php echo $content; ?>
-    </div>
 	<div class="clear"></div>
-
-    <div class="row">
-        <div id="footer" class="col-lg-12">
-            <div class="row">
-                <div class="col-lg-4">
-                    <p><strong>Dúvidas quanto ao acesso?</strong><br />
-                    Consulte o <a href="#">Tutorial</a> ou entre em <a href="#">Contato</a>.</p>
-                </div>
-                <div class="col-lg-4">
-                    <p>Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
-                    All Rights Reserved.</p>
-                </div>
-                <div class="col-lg-4">
-                    <p><?php echo Yii::powered(); ?></p>
-                </div>
+    <div class="col-lg-12" id="footer">
+            <div class="col-lg-8">
+                <p><strong>Dúvidas quanto ao acesso?</strong><br />
+                Consulte o <a href="#">Tutorial</a> ou entre em <a href="#">Contato</a>.</p>
             </div>
-        </div><!-- footer -->
-    </div>
-</div>
+            <div class="col-lg-4">
+                <p>Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
+                All Rights Reserved.<br />
+                <?php echo Yii::powered(); ?></p>
+            </div>
+    </div><!-- footer -->
+</div><!--/.row-->
+</div><!-- container -->
 </div><!-- page -->
-    
-    <!-- jQuery (necessário para os plugins JavaScript do Bootstrap) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="<?php echo Yii::app()->request->baseUrl; ?>/css/bootstrap/js/bootstrap.min.js"></script>
-    
 </body>
 </html>
