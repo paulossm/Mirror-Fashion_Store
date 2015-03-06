@@ -4,6 +4,9 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="language" content="en">
+    
+    <!-- mobile first -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- Bootstrap CSS framework -->
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/bootstrap/css/bootstrap.css" media="screen, projection">
@@ -18,12 +21,10 @@
     <link href='http://fonts.googleapis.com/css?family=Cabin:400,500,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
     
-    <!-- weather css -->
-    <link rel="stylesheet" type="text/css" href="../../extensions/weather/css/styles.css" />
-    
     <!-- jQuery (necessário para os plugins JavaScript do Bootstrap e HighCharts) -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/css/bootstrap/js/bootstrap.min.js"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
     
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
