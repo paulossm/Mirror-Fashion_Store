@@ -51,7 +51,7 @@
                             <?php $this->widget('zii.widgets.CMenu',array(
                                 'items'=>array(
                                     array('label'=>'Home', 'url'=>array('../')),
-                                    array('label'=>'Dashboard', 'url'=>array('/site/page', 'view'=>'about')),
+                                    array('label'=>'Dashboard', 'url'=>array('/site/page', 'view'=>'dashboard')),
                                     array('label'=>'Contato', 'url'=>array('/site/contact')),
                                     array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
                                     array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
@@ -76,12 +76,12 @@
 	<?php echo $content; ?>
 	<div class="clear"></div>
     <div class="col-lg-12" id="footer">
-            <div class="col-lg-8">
+            <div class="col-lg-9">
                 <p><strong>Dúvidas quanto ao acesso?</strong><br />
                 Consulte o <a href="#">Tutorial</a> ou entre em <a href="#">Contato</a>.</p>
             </div>
-            <div class="col-lg-4">
-                <p>Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
+            <div class="col-lg-3">
+                <p>Copyright &copy; <?php echo date('Y'); ?> by Sistema Acadêmico.<br/>
                 All Rights Reserved.<br />
                 <?php echo Yii::powered(); ?></p>
             </div>

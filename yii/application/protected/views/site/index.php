@@ -35,7 +35,7 @@ $this->pageTitle=Yii::app()->name;
                         <div class="thumbnail destaque">
                             <img src="images/university.jpg" class="img-responsive" alt="Universidade" />
                             <div class="caption">
-                            <h3>Integração com o sistema de gestão de atividades acadêmicas da Universidade.</h3>
+                            <h3>Integrado ao sistema de gestão de atividades acadêmicas da Universidade.</h3>
                             <p>com apenas um cadastro, você tem acesso a todos os recursos disponíveis pelo sistema.</p>
                             <!--<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>-->
                             </div>

@@ -17,7 +17,7 @@ $this->breadcrumbs=array(
 
 <?php else: ?>
 
-<div class="col-lg-6 col-sm-12 col-md-6">
+<div class="col-lg-12 col-sm-12 col-md-12">
 <p>
 Preencha o formulátio abaixo para entrar em contato.
 </p>
@@ -80,8 +80,5 @@ Preencha o formulátio abaixo para entrar em contato.
 <?php $this->endWidget(); ?>
 
 </div><!-- form -->
-</div>
-<div class="col-lg-6 col-ms-12 col-md-6">
-    <h2>Mapas</h2>
 </div>
 <?php endif; ?>

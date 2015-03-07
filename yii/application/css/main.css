@@ -1,9 +1,32 @@
+/* ~ COLOR PALETTE ~
+-----------------------
+    Honey Flower
+    674172
+    103, 65, 114
+
+    Lynch
+    6C7A89
+    108, 122, 137
+
+    Quite Black
+    030303
+
+    Almost White
+    F8F8F8
+
+    more
+    (by dearpadfoot)
+    66A584
+    102,165,132  
+------------------------
+*/
+
 body
 {
 	margin: 0;
 	padding: 0;
 	color: #030303;
-	font: normal 10pt 'Open Sans',Arial,Helvetica,sans-serif;
+	font: normal 12px 'Open Sans',Arial,Helvetica,sans-serif;
 	background: #F8F8F8;
 }
 #page
@@ -24,7 +47,8 @@ body
 
 #footer
 {
-    background-color: #c74732;
+    background-color: transparent;
+    border-top: solid 2px #674172;
 	font-size: 0.9em;
 	text-align: left;
     margin-top: 15px;
@@ -33,22 +57,26 @@ body
     padding: 15px;
     color: #000;
 }
+#footer div:nth-child(2) p{
+    text-align: right;   
+}
 #logo
 {
     color: #000;
 }
 #welcome {
     margin: 10px 0px;
+    
 }
 #mainmenu
 { 
-    border-bottom: solid 2px #c74732;
+    border-bottom: solid 2px #674172;
 }
 #user {
     margin-bottom: 5px;
 }
 #user-options {
-    background: #c74732;
+    background: #6C7A89;
 }
 #user-options a {
     color: #EFEFEF;
@@ -78,7 +106,7 @@ body
 
 #mainmenu ul li a
 {
-	color: #c74732;
+	color: #674172;
 	background-color:transparent;
 	font-size:14px;
 	font-weight:700;
@@ -93,14 +121,14 @@ body
 #mainmenu ul li a:hover, #mainmenu ul li.active a
 {
 	color: #EFEFEF;
-	background-color: #c74732;
+	background-color: #674172;
 	text-decoration:none;
     
     transition: all ease-out .2s;
     -webkit-transition: all ease-out .2s;
 }
 #explicit {
-    background-color: #c74732;
+    background-color: #66A584;
     color: #f8f8f8;
     
     width: 90%;
@@ -108,7 +136,10 @@ body
 }
 #user_discipline {
     padding: 10px;
-    background-color: #c74732;
+    background-color: transparent;
+    margin-bottom: 15px;
+    
+    border-bottom: solid 2px #674172;
 }
 div.destaque {
     width: 100%;
@@ -126,7 +157,7 @@ div.destaque div.caption h3 {
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     font-weight: 400;
     text-transform:  uppercase;
-    color: #c74732;
+    color: #674172;
     font-size: 16px;
     
 }
@@ -205,7 +236,7 @@ div.breadcrumbs
     margin-top: 60px;
 }
 div.breadcrumbs a {
-    color: #c74732;   
+    color: #674172;   
 }
 div.breadcrumbs span
 {
@@ -295,13 +326,26 @@ div.search-form
 }
 
 #explicit a, #footer a {
-    color: #F8F8F8;
+    color: #674172;
     text-decoration: underline;
 }
 div[id^="charts"]{
     margin: 10px 0px;   
 }
 .short-icon {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
+}
+ul.list-group li.list-group-item {
+    border-radius: none;
+    border-top-left-radius: none;
+    border-top-right-radius: none;
+    border-bottom-left-radius: none;
+    border-bottom-right-radius: none;
+}
+.nav-tabs.nav-justified > li > a {
+    color: #6C7A89;   
+}
+label {
+    
 }
